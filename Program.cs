@@ -52,7 +52,7 @@
                 {
                     string now = DateTime.UtcNow.ToString("O");
                     Console.WriteLine(now);
-                    double tempF = 60 + Math.Sin(DateTime.UtcNow.Second);
+                    double tempF = 60 + Math.Sin(DateTime.UtcNow.Millisecond);
                     var o = new
                     {
                         deviceid = "twin1",
